@@ -36,9 +36,13 @@ Run script.py (or Datafetch.ipynb) to fetch comments from reddit. Run Dataproces
 ## Files:
 
 **Datafetch.ipynb** contains script for fetching data from reddit.
+
 **praw.ini** contains reddit setup details.
+
 **Dataprocess folder** contains Jupyter notebooks used for data cleaning and organizing.
+
 **SimpleTransformersModel.ipynb** contains simpletransformers model.
+
 **fastmodel.ipynb** contains FastAI based model.
 
 

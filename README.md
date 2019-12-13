@@ -25,13 +25,17 @@ module load Anaconda3/5.3.1
 
 > Run Jupyter on nlp_env kernel.
 
-## Step 3: Setup Praw.ini
+## Step 3: Setup Praw.ini (Required only for 4b)
 
 Create a developer app on reddit, get the client_id, client_secret and replace them in praw.ini file. Also replace username and password fields with respective credentials.
 
-## Step 4: Running
+## Step 4a:
 
-Run script.py (or Datafetch.ipynb) to fetch comments from reddit. Run Dataprocess multiclass notebook for Simpletransformers model and Dataprocess onehot notebook for FastAI model.
+Use existing data. Run SimpleTransformers and FastAI with their respective notebooks.
+
+## Step 4b (Alternate):
+
+Run script.py (or Datafetch.ipynb) to fetch comments from reddit. Run Dataprocess multiclass notebook for processing data for SimpleTransformers model and Dataprocess onehot notebook for processing data for FastAI model.
 
 ## Files:
 
@@ -45,5 +49,8 @@ Run script.py (or Datafetch.ipynb) to fetch comments from reddit. Run Dataproces
 
 **fastmodel.ipynb** contains FastAI based model.
 
+**data** folder contains data used for SimpleTransformers model. From r/DC_Cinematic.
+
+**fastdata** folder contains data used for FastAI model. From r/MarvelStudios.
 
 
